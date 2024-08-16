@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@color/design_default_color_primary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+
+            android:src="@drawable/plate"/>
+        <TextView
+            android:id="@+id/DayTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:textColor="@color/design_default_color_primary"
+            android:text="DayX"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/BreakfastLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:layout_below="@id/DayTv"
+            android:textColor="@color/black"
+            android:text="Breakfast: "/>
+
+        <TextView
+            android:id="@+id/BreakfastTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/BreakfastLabelTv"
+            android:layout_below="@id/DayTv"
+            android:textColor="@color/black"
+            android:text=" Breakfast "/>
+
+        <TextView
+            android:id="@+id/MorningSnackLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:layout_below="@id/BreakfastTv"
+            android:textColor="@color/black"
+            android:text="Morning snack: "/>
+
+        <TextView
+            android:id="@+id/MorningSnackTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/MorningSnackLabelTv"
+            android:layout_below="@id/BreakfastTv"
+            android:textColor="@color/black"
+            android:text="50"/>
+
+        <TextView
+            android:id="@+id/LunchLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:layout_below="@id/MorningSnackTv"
+            android:text="Lunch: "
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/LunchTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/LunchLabelTv"
+            android:layout_below="@id/MorningSnackTv"
+            android:textColor="@color/black"
+            android:text="50"/>
+        <TextView
+            android:id="@+id/EveningSnackLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:layout_below="@id/LunchTv"
+            android:textColor="@color/black"
+            android:text="Evening snack: "/>
+
+        <TextView
+            android:id="@+id/EveningSnackTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/EveningSnackLabelTv"
+            android:layout_below="@id/LunchTv"
+            android:textColor="@color/black"
+            android:text="50"/>
+
+        <TextView
+            android:id="@+id/DinnerLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:layout_below="@id/EveningSnackTv"
+            android:text="Dinner: "
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/DinnerTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/DinnerLabelTv"
+            android:layout_below="@id/EveningSnackTv"
+            android:textColor="@color/black"
+            android:text="50"/>
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

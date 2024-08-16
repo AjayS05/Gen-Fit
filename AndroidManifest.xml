@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="auto">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application
+        android:name=".GenFit"
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/gen"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/gen"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GenFit"
+        tools:targetApi="31">
+        <activity
+            android:name=".HeightHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeightHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.ForgotPasswordActivity"
+            android:exported="false"
+            android:label="@string/title_activity_forgot_password" />
+        <activity
+            android:name=".MainAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <receiver android:name = ".MyNotificationPublisher" />
+    </application>
+
+</manifest>

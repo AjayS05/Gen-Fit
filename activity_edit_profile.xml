@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+    <RelativeLayout
+        android:id="@+id/RegisterText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/shape_rect01"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/ic_back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_circle01"
+        android:padding="5dp"
+        android:src="@drawable/ic_key_white" />
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisterText"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/shape_rect02"
+        android:drawableStart="@drawable/ic_person_gray"
+        android:drawablePadding="5dp"
+        android:hint="Full Name"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/phoneET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameET"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_rect02"
+        android:drawableStart="@drawable/ic_phone_gray"
+        android:drawablePadding="5dp"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/personLl"
+        android:layout_margin="5dp"
+        android:layout_below="@id/phoneET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/WeightET"
+
+            android:hint="Weight (KG)"
+            android:padding="10dp"
+
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType="numberSigned"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect02"/>
+        <EditText
+            android:id="@+id/HeightET"
+            android:hint="Height (CM)"
+            android:padding="10dp"
+
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:inputType ="numberSigned"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect02"/>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Red"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:id="@+id/warningTv"
+        android:layout_below="@id/personLl"
+        android:text="Updated weight and height will be stored in your history"
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:id="@+id/GoalTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_rect02"
+        android:drawablePadding="10dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:padding="10dp"
+        android:hint="Your Goal"
+        android:layout_below="@id/warningTv"
+        app:drawableEndCompat="@drawable/ic_down_gray"
+        app:drawableStartCompat="@drawable/ic_categories_gray" />
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_below="@+id/GoalTv"
+        android:hint="Email"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_mail_gray"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/shape_rect02"/>
+
+
+
+    <Button
+        android:id="@+id/UpdateBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEt"
+        android:layout_centerHorizontal="true"
+        android:minWidth="120dp"
+        android:text="Update" />
+
+
+</RelativeLayout>

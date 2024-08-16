@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@color/design_default_color_primary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+
+            android:src="@drawable/gym"/>
+        <TextView
+            android:id="@+id/DayTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:textColor="@color/design_default_color_primary"
+            android:text="DayX"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/TitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DayTv"
+            android:layout_toEndOf="@id/iconIv"
+            android:textColor="@color/design_default_color_primary"
+            android:text="Title"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/OneLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/TitleTv"
+            android:textColor="@color/black"
+            android:text="1: "/>
+
+        <TextView
+            android:id="@+id/OneTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/OneLabelTv"
+            android:layout_below="@id/TitleTv"
+            android:textColor="@color/black"
+            android:text="1 "/>
+
+        <TextView
+            android:id="@+id/TwoLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:layout_below="@id/OneTv"
+            android:textColor="@color/black"
+            android:text="2: "/>
+
+        <TextView
+            android:id="@+id/TwoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/TwoLabelTv"
+            android:layout_below="@id/OneTv"
+            android:textColor="@color/black"
+            android:text="2"/>
+
+        <TextView
+            android:id="@+id/ThreeLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:layout_below="@id/TwoTv"
+            android:text="3: "
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/ThreeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ThreeLabelTv"
+            android:layout_below="@id/TwoTv"
+            android:textColor="@color/black"
+            android:text="3"/>
+        <TextView
+            android:id="@+id/FourLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:layout_below="@id/ThreeTv"
+            android:textColor="@color/black"
+            android:text="4: "/>
+
+        <TextView
+            android:id="@+id/FourTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/FourLabelTv"
+            android:layout_below="@id/ThreeTv"
+            android:textColor="@color/black"
+            android:text="4"/>
+
+        <TextView
+            android:id="@+id/FiveLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:layout_below="@id/FourTv"
+            android:text="5: "
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/FiveTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/FiveLabelTv"
+            android:layout_below="@id/FourTv"
+            android:textColor="@color/black"
+            android:text="5"/>
+
+        <TextView
+            android:id="@+id/SixLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:layout_below="@id/FiveTv"
+            android:text=""
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/SixTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/FiveLabelTv"
+            android:layout_below="@id/FiveTv"
+            android:textColor="@color/black"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/SevenLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iconIv"
+            android:layout_below="@id/SixTv"
+            android:text=""
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/SevenTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/SevenLabelTv"
+            android:layout_below="@id/SixTv"
+            android:textColor="@color/black"
+            android:text=""/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
